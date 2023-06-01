@@ -1,0 +1,93 @@
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div id="form">
+    <!-- <form action=""> -->
+      <div id="date1">
+        <p>Due Date</p>
+        <input id="dueDate" type="date" name="bdate" />
+      </div>
+
+      <div id="recurring">
+        <p>Recurring?</p>
+        <select>
+          <option value="">Select</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+      </div>
+
+      <div id="total-amount">
+        <p>Total Amount</p>
+        <input type="number" name="total-amount" />
+      </div>
+
+      <div id="amount-excl-tax">
+        <p>Amount (excl. tax)</p>
+        <input type="number" name="amount-excl-tax" />
+      </div>
+
+      <div id="category">
+        <select>
+          <option value="">Category</option>
+          <option value="1">Groceries</option>
+          <option value="2">Medicines</option>
+          <option value="3">Fashion</option>
+          <option value="4">Electronics</option>
+          <option value="5">Sports and Outdoor</option>
+        </select>
+      </div>
+
+      <div id="description">
+        <p>Description</p>
+        <textarea rows="3"></textarea>
+      </div>
+
+      <div id="date2">
+        <p>Payment Date</p>
+        <input type="date" name="payment-date" />
+        
+      </div>
+
+      <div id="btn-block">
+        <button type="submit" onclick="submit()">SUBMIT</button>
+      </div>
+    <!-- </form> -->
+  </div>
+
+  <div id="div2">
+    <span id="date"></span>
+    <div id="category1">
+      
+      <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+      <span>Groceries</span>
+    </div>
+    <div id="category2"><i class="fa-solid fa-tablets medicine "></i>
+      <span>Medicines</span>
+    </div>
+    <div id="category3">
+      <i class="fa-solid fa-shirt"></i>
+      <span>Fashion</span>
+    </div>
+    <div id="category4">
+      <i class="fa-solid fa-tv"></i>
+      <span>Electronics</span>
+    </div>
+    <div id="category5">
+      <i class="fa-solid fa-baseball"></i>
+    <span>Sports and Outdoor</span>
+    </div>
+  </div>
+</body>
+</html>
